@@ -10,3 +10,10 @@
 4.中文乱码
 git config --global core.quotepath false
 git config --global i18n.logoutputencoding utf-8
+
+
+5.查看提交日志
+	git log    很详细
+	git log --pretty=oneline    简略显示
+	
+	
