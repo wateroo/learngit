@@ -36,5 +36,29 @@ git config --global i18n.logoutputencoding utf-8
 
 
 8.删除文件
+	未提交到暂存区的： 直接rm a.txt
+	提交到暂存区删除了，
+		1. 本地删除   rm a.txt   
+		2. 暂存区删除  git rm a.txt
+
+	本地删除了想恢复
+		1. git restore a.txt
+		2. git chekout -- a.txt
 	
 
+
+
+
+
+
+
+添加远程仓库
+1. 创建SSH Key,会生成id_rsa（私钥）和id_rsa.pub（公钥）这两个文件
+	ssh-keygen -t rsa -C "897238156@qq.com"
+
+2. github中添加生成的公钥
+3. 本地仓库关联远程仓库
+	git remote add origin https://github.com/wateroo/learngit.git
+
+4. 第一次推送到远程仓库 
+	git push -u origin master
