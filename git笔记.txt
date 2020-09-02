@@ -18,9 +18,22 @@ git config --global i18n.logoutputencoding utf-8
 	
 	
 6.版本回退
+	
 	git reset HEAD^          ^代表上个版本   ^^代表上上个版本
 	宁外一种方式   git reset HEAD~1   数字可变
 	
 	当回退之后，之前的最新版就不可见了，只要git窗口没关还是可以恢复的
 		git reset --hard 1094a （版本号简写）  
 	
+7.撤销修改
+	git checkout  -- readme.txt 
+
+	-- 这个很重要不能少
+
+	这个分两种情况的撤销
+	1). 未提交到暂存区，也就是为执行git add ,执行命令会恢复到跟仓库一样的版本
+	2). 提交到暂存区，就会撤销到跟暂存区一样的版本
+
+
+8.
+
