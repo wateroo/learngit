@@ -35,5 +35,6 @@ git config --global i18n.logoutputencoding utf-8
 	2). 提交到暂存区，就会撤销到跟暂存区一样的版本
 
 
-8.
+8.删除文件
+	
 
