@@ -17,3 +17,10 @@ git config --global i18n.logoutputencoding utf-8
 	git log --pretty=oneline    简略显示
 	
 	
+6.版本回退
+	git reset HEAD^          ^代表上个版本   ^^代表上上个版本
+	宁外一种方式   git reset HEAD~1   数字可变
+	
+	当回退之后，之前的最新版就不可见了，只要git窗口没关还是可以恢复的
+		git reset --hard 1094a （版本号简写）  
+	
